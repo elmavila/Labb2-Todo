@@ -1,0 +1,147 @@
+/* BOTH */
+
+* {
+    user-select: none;
+}
+
+body {
+    background-color: #EED6D3;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+#todo,
+#todos {
+    cursor: pointer;
+}
+
+/*INDEX*/
+
+#moto {
+    margin-top: 3px;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+#searchUser {
+    display: grid;
+    grid-template-columns: 10% 30% 1fr 30% 10%;
+}
+
+#usersSection {
+    background-color: #FFE7E9;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 20px;
+    grid-column: 2;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#searchButton {
+    margin-left: 5px;
+}
+
+#todo>p:hover {
+    opacity: 0.7;
+}
+
+.zen {
+    grid-column: 4;
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+}
+
+/*TODOS*/
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 33%);
+}
+
+#h1-todo {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+#userHeader {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+}
+
+#todoList {
+    grid-column-start: 2;
+    grid-row: 2;
+    display: inline-block;
+    background-color: #FFE7E9;
+    border-radius: 15px;
+}
+
+#todos>li::first-letter {
+    text-transform: capitalize;
+}
+
+li {
+    padding: 10px 5px;
+}
+
+#todos>li:hover {
+    opacity: 0.7;
+}
+
+#goBackLink {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    display: inline-block;
+
+}
+
+#goBackButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#goBackButton {
+    padding: 10px;
+    background-color: #FFE7E9;
+    border-radius: 15px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+#info {
+    display: inline-block;
+    background-color: #FFE7E9;
+    border-radius: 15px;
+    width: 40%;
+    height: 11%;
+    grid-row: 2;
+    grid-column: 3;
+    justify-self: center;
+    opacity: 65%;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
